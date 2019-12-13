@@ -1,13 +1,16 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://w3id.org/framester/metadata/schema#"
      xml:base="https://w3id.org/framester/metadata/schema"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:data-view="http://www.w3.org/2003/g/data-view#">
     <owl:Ontology rdf:about="https://w3id.org/framester/metadata/schema">
         <owl:versionIRI rdf:resource="https://w3id.org/framester/metadata/schema/0.0.1"/>
+        <owl:imports rdf:resource="http://www.w3.org/2002/07/owl"/>
         <owl:imports rdf:resource="http://www.w3.org/2004/03/trix/rdfg-1/"/>
     </owl:Ontology>
     
@@ -32,6 +35,15 @@
     
 
 
+    <!-- https://w3id.org/framester/metadata/schema/hasSchema -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/framester/metadata/schema/hasSchema">
+        <rdfs:domain rdf:resource="https://w3id.org/framester/metadata/schema/Graph"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/framester/metadata/schema/hasSubGraph -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/framester/metadata/schema/hasSubGraph">
@@ -45,6 +57,12 @@
     <!-- https://w3id.org/framester/metadata/schema/isSubGraphOf -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/framester/metadata/schema/isSubGraphOf"/>
+    
+
+
+    <!-- https://w3id.org/framester/metadata/schema/license -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/framester/metadata/schema/license"/>
     
 
 
