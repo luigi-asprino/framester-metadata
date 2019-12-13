@@ -1,7 +1,7 @@
 # Framester Metadata Ontology
 
 This repository contains the schema for describing Framester's metadata. 
-The documentation of the ontology can be accessed at the following [link](http://150.146.207.114/lode/extract?url=https%3A%2F%2Fraw.githubusercontent.com%2Fluigi-asprino%2Fframester-metadata%2Fmaster%2Fontology%2Flatest%2Fontology.owl&lang=en)
+The documentation of the ontology can be accessed at the following [link](http://150.146.207.114/lode/extract?url=https%3A%2F%2Fraw.githubusercontent.com%2Fluigi-asprino%2Fframester-metadata%2Fmaster%2Fontology%2Flatest%2Fontology.owl&lang=en).
 
 ### Ontology Diagram
 
