@@ -36,6 +36,8 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/framester/metadata/schema/hasSubGraph">
         <owl:inverseOf rdf:resource="https://w3id.org/framester/metadata/schema/isSubGraphOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/framester/metadata/schema/Graph"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/metadata/schema/Graph"/>
     </owl:ObjectProperty>
     
 
@@ -43,6 +45,37 @@
     <!-- https://w3id.org/framester/metadata/schema/isSubGraphOf -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/framester/metadata/schema/isSubGraphOf"/>
+    
+
+
+    <!-- https://w3id.org/framester/metadata/schema/wasDerivedFrom -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/framester/metadata/schema/wasDerivedFrom"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/framester/metadata/schema/conceptNetWeight -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/framester/metadata/schema/conceptNetWeight">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/framester/metadata/schema/confidence"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/framester/metadata/schema/confidence -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/framester/metadata/schema/confidence"/>
     
 
 
